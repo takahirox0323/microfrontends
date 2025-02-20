@@ -9,7 +9,7 @@ const nextConfig = {
        * Rewrites for Multi-Zones
        */
       {
-        source: '/docs-static/_next/:path*',
+        source: '/docs/_next/:path*',
         destination: '/_next/:path*',
       }
     ]
