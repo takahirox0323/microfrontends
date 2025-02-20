@@ -14,8 +14,3 @@ applications:
         baseDirectory: out
         files:
           - '**/*'
-      cache:
-        paths:
-          - node_modules/**/*
-          - apps/main/.next/cache/**/*
-          - apps/docs/.next/cache/**/*
