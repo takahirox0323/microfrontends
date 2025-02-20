@@ -1,4 +1,3 @@
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   async rewrites() {
@@ -16,7 +15,11 @@ const nextConfig = {
       },
       {
         source: '/docs-static/:path*',
-        destination: `${process.env.DOCS_URL}/docs-static/:path*`,
+        destination: `${process.env.DOCS_URL}/docs/:path*`,
+      },
+      {
+        source: '/docs/_next/:path*',
+        destination: `${process.env.DOCS_URL}/docs/_next/:path*`,
       },
     ]
   },
