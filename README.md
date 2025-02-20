@@ -27,7 +27,7 @@ https://solutions-microfrontends.vercel.app
 
 You can choose from one of the following two methods to use this repository:
 
-### One-click deploy
+### One-click deplo
 
 Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=vercel-examples):
 
