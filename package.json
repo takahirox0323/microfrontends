@@ -21,6 +21,15 @@
     "start": "turbo run start",
     "version-packages": "changeset version"
   },
+  "dependencies": {
+    "@acme/components": "workspace:*",
+    "@acme/design-system": "workspace:*",
+    "@acme/utils": "workspace:*",
+    "@vercel/examples-ui": "^1.0.4",
+    "next": "^14.2.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
   "devDependencies": {
     "@changesets/cli": "^2.27.8",
     "@types/node": "20.11.30",
