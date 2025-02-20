@@ -1,4 +1,3 @@
-const { DOCS_URL } = process.env
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -11,15 +10,15 @@ const nextConfig = {
        */
       {
         source: '/docs',
-        destination: `${DOCS_URL}/docs`,
+        destination: `${process.env.DOCS_URL}/docs`,
       },
       {
         source: '/docs/:path*',
-        destination: `${DOCS_URL}/docs/:path*`,
+        destination: `${process.env.DOCS_URL}/docs/:path*`,
       },
       {
         source: '/docs-static/:path*',
-        destination: `${DOCS_URL}/docs-static/:path*`,
+        destination: `${process.env.DOCS_URL}/docs-static/:path*`,
       },
     ]
   },
