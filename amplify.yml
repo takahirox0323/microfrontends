@@ -11,6 +11,6 @@ applications:
           commands:
             - pnpm build
       artifacts:
-        baseDirectory: apps/main/out
+        baseDirectory: apps/main/.next
         files:
           - '**/*'
