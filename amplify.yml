@@ -14,3 +14,4 @@ applications:
         baseDirectory: apps/docs/.next
         files:
           - '**/*'
+          - '../node_modules/**/*'  # node_modulesを含める
