@@ -4,25 +4,29 @@ export function Navbar({ isDocsApp }: { isDocsApp?: boolean }) {
   return isDocsApp ? (
     <ul className="inline-flex mb-4">
       <li>
-        <A href="/">Home (Multi-Zones)</A>
+        <a href="https://develop-main.d3ebifrucnlqj9.amplifyapp.com/">
+          Docs (Multi-Zones)
+        </a>
       </li>
+      <a href="https://develop-main.d3ebifrucnlqj9.amplifyapp.com/about">
+        Docs (Multi-Zones)
+      </a>
       <li className="ml-4">
-        <Link href="/docs">Docs</Link>
-      </li>
-      <li className="ml-4">
-        <Link href="/docs/about">About Docs</Link>
+        <a href="/docs">Docs (Multi-Zones)</a>
       </li>
     </ul>
   ) : (
     <ul className="inline-flex mb-4">
       <li>
-        <Link href="/">Home</Link>
+        <a href="https://develop-main.d3ebifrucnlqj9.amplifyapp.com/">
+          Docs (Multi-Zones)
+        </a>
       </li>
+      <a href="https://develop-main.d3ebifrucnlqj9.amplifyapp.com/about">
+        Docs (Multi-Zones)
+      </a>
       <li className="ml-4">
-        <Link href="/about">About</Link>
-      </li>
-      <li className="ml-4">
-        <A href="/docs">Docs (Multi-Zones)</A>
+        <a href="/docs">Docs (Multi-Zones)</a>
       </li>
     </ul>
   )
