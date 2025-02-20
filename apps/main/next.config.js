@@ -16,7 +16,7 @@ const nextConfig = {
       },
       {
         source: '/docs-static/:path*',
-        destination: `${process.env.DOCS_URL}/docs-static/:path*`,
+        destination: `${process.env.DOCS_URL}/docs/:path*`,
       },
     ]
   },
