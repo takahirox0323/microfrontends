@@ -21,7 +21,11 @@ We recommend reading the ["How it works"](#how-it-works) section to understand t
 
 ## Demo
 
+<<<<<<< HEAD
 https://solutions-microfrontends.vercel
+=======
+https://solutions-microfrafdsontends.vercel.app
+>>>>>>> develop/main
 
 ## How to use
 
