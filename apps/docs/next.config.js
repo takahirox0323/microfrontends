@@ -1,7 +1,7 @@
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  assetPrefix: '/docs',
+  assetPrefix: 'https://develop-docs.d1n4gq1r6iigwu.amplifyapp.com/docs',
   basePath: "/docs",
   async rewrites() {
     return [
@@ -10,7 +10,7 @@ const nextConfig = {
        */
       {
         source: '/docs/_next/:path*',
-        destination: '/_next/:path*',
+        destination: 'https://develop-docs.d1n4gq1r6iigwu.amplifyapp.com/_next/:path*',
       }
     ]
   },
