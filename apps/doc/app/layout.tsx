@@ -4,7 +4,7 @@ import { Layout } from '@vercel/examples-ui'
 import '@vercel/examples-ui/globals.css'
 
 export const metadata: Metadata = {
-  title: 'Microfrontends - Docs',
+  title: 'Microfrontends - Main',
   description: 'Example demonstrating vertical microfrontends on Vercel',
 }
 
@@ -19,7 +19,7 @@ export default function RootLayout({
         <Layout title="Microfrontends" path="solutions/microfrontends">
           {children}
         </Layout>
-        <PrefetchCrossZoneLinks hrefs={['/', '/about']} />
+        <PrefetchCrossZoneLinks hrefs={['/docs', '/docs/about']} />
       </body>
     </html>
   )
