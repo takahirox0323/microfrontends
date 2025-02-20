@@ -1,0 +1,20 @@
+version: 1
+applications:
+  - appRoot: apps/main
+    frontend:
+      phases:
+        preBuild:
+          commands:
+            - npm install -g pnpm
+            - pnpm install
+        build:
+          commands:
+            - pnpm build:main
+      artifacts:
+        baseDirectory: apps/main/out
+        files:
+          - '**/*'
+      cache:
+        paths:
+          - node_modules/**/*
+          - apps/main/.next/cache/**/*
