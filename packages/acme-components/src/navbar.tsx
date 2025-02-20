@@ -4,7 +4,7 @@ export function Navbar({ isDocsApp }: { isDocsApp?: boolean }) {
   return isDocsApp ? (
     <ul className="inline-flex mb-4">
       <li>
-        <A href="/">Home (Multi-Zones)</A>
+        <Link href="/">Home (Multi-Zones)</Link>
       </li>
       <li className="ml-4">
         <Link href="/docs">Docs</Link>
@@ -22,7 +22,7 @@ export function Navbar({ isDocsApp }: { isDocsApp?: boolean }) {
         <Link href="/about">About</Link>
       </li>
       <li className="ml-4">
-        <A href="/docs">Docs (Multi-Zones)</A>
+        <Link href="/docs">Docs (Multi-Zones)</Link>
       </li>
     </ul>
   )
