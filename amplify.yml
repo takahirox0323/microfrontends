@@ -9,7 +9,7 @@ applications:
             - pnpm install
         build:
           commands:
-            - pnpm build:docs
+            - pnpm build
       artifacts:
         baseDirectory: apps/docs/.next
         files:
