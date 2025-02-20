@@ -11,6 +11,6 @@ applications:
           commands:
             - pnpm build
       artifacts:
-        baseDirectory: main/out
+        baseDirectory: apps/main/out
         files:
           - '**/*'
