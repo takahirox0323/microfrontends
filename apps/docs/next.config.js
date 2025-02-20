@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export',
   assetPrefix: '/docs-static',
   async rewrites() {
     return {

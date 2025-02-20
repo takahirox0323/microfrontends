@@ -2,6 +2,8 @@ const { DOCS_URL } = process.env
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export',
+
   async rewrites() {
     return [
       /**
