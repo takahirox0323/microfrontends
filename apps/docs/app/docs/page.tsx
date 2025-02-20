@@ -6,7 +6,7 @@ export default function AboutPage(): React.ReactNode {
     <Page>
       <Navbar />
       <Text variant="h1" className="mb-6">
-        Docsです！
+        こんにちはDocsです
       </Text>
     </Page>
   )
