@@ -1,26 +1,18 @@
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  assetPrefix: "/docs",
-  basePath: "/docs",
+  assetPrefix: '/docs-static',
   async rewrites() {
-    return [
-      /**
-       * Rewrites for Multi-Zones
-       */
-      {
-        source: '/docs',
-        destination: `${process.env.DOCS_URL}/docs`,
-      },
-      {
-        source: '/docs/:path*',
-        destination: `${process.env.DOCS_URL}/docs/:path*`,
-      },
-      {
-        source: '/docs-static/:path*',
-        destination: `${process.env.DOCS_URL}/docs-static/:path*`,
-      },
-    ]
+    return {
+      beforeFiles: [
+        // This rewrite is necessary to support assetPrefix only in Next 14 and below.
+        // It is not necessary in Next 15.
+        {
+          source: '/docs-static/_next/:path*',
+          destination: '/_next/:path*',
+        },
+      ],
+    }
   },
 }
 
